@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Proyectos - Ana Isabel</title>
+
+    <link rel="icon" href="img/favIcon.png" type="image/png">
+    <link rel="shortcut icon" href="img/favIcon1.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- 🔵 NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-rosa sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Mi Portafolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html#home">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#skills">Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link active" href="projects.html">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 🟣 HEADER -->
+<header class="hero-section-projects text-center py-4">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Mis Proyectos</h1>
+        <p class="lead">Explora mi trabajo y creaciones</p>
+    </div>
+</header>
+
+<!-- 🟢 PROYECTOS -->
+<section class="projects-section py-5">
+    <div class="container">
+        <div class="row g-4 d-flex align-items-stretch">
+            <div class="col-md-6">
+                <div class="card project-card shadow-lg border-0">
+                    <img src="/img/imgSensorial.png" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Sensorial Store: Sistema de Inventario y Reporte de Ventas</b></h5><hr>
+                        <p class="card-text">Sistema de inventario de escritorio orientado a la gestión de productos cosméticos y perfumería, que implementa operaciones 
+                            CRUD para el manejo de datos. Permite controlar existencias, precios y categorías, optimizando la organización de la información. 
+                            El proyecto está diseñado con una interfaz intuitiva que facilita la interacción del usuario.</p>
+                        <button class="btn btn-primary-custom" data-bs-toggle="modal" data-bs-target="#modal1">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card project-card shadow-lg border-0">
+                    <img src="/img/imgCRUD.png" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Sistema de Gestión de Personas (CRUD)</b></h5><hr>
+                        <p class="card-text">Aplicación de escritorio desarrollada para la gestión de registros de personas, que permite realizar operaciones CRUD 
+                            sobre una base de datos. El sistema cuenta con una interfaz intuitiva que facilita la visualización y administración de la información, 
+                            incluyendo búsqueda, actualización y listado completo de registros.</p>
+                        <button class="btn btn-primary-custom" data-bs-toggle="modal" data-bs-target="#modal2">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card project-card shadow-lg border-0">
+                    <img src="/img/imgProductsandCategories.png" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Sistema Web de Gestión de Productos y Categorías</b></h5><hr>
+                        <p class="card-text">
+                            El sistema facilita la organización de productos, asociándolos a sus respectivas categorías, e incluye funcionalidades como creación de registros, edición, 
+                            visualización de detalles y eliminación. Cuenta con una interfaz clara, responsiva y orientada a mejorar la administración de datos.</p>
+                        <button class="btn btn-primary-custom" data-bs-toggle="modal" data-bs-target="#modal3">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modales -->
+<div class="modal fade" id="modal1" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Sensorial Store</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <video id="video1" width="100%" controls muted autoplay controls>
+                    <source src="/video/VidSensorial.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal2" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Sistema de Gestión de Personas (CRUD)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <iframe width="560" height="315"
+                    src="https://youtu.be/4UDgdhAwxoM?si=CMTjE7hIUOU_62Ec" title="Video" frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal3" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Sistema Web de Gestión de Productos y Categorías</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <video id="video3" width="100%" controls>
+                    <source src="/video/VidProductsandCategories.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 🔴 FOOTER (igual que index.html) -->
+<footer id="contact" class="footer-rosa text-white py-5">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <p><i class="fas fa-envelope me-2"></i>ana@email.com</p>
+                <p><i class="fas fa-phone me-2"></i>+57 300 123 4567</p>
+                <p><i class="fas fa-map-marker-alt me-2"></i>Medellín, Colombia</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Sígueme</h5>
+                <div class="social-icons">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>Enlaces rápidos</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#home" class="footer-link">Inicio</a></li>
+                    <li><a href="#about" class="footer-link">Sobre mí</a></li>
+                    <li><a href="projects.html" class="footer-link">Proyectos</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <p class="text-center mb-0">© 2026 Ana Isabel. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function() {
+        // Detener video cuando se cierre el modal 1
+        $('#modal1').on('hidden.bs.modal', function() {
+            const video = document.getElementById('video1');
+            video.pause();
+            video.currentTime = 0;
+        });
+
+        // Detener video cuando se cierre el modal 2
+        $('#modal2').on('hidden.bs.modal', function() {
+            const video = document.getElementById('video2');
+            video.pause();
+            video.currentTime = 0;
+        });
+
+        // Detener video cuando se cierre el modal 3
+        $('#modal3').on('hidden.bs.modal', function() {
+            const video = document.getElementById('video3');
+            video.pause();
+            video.currentTime = 0;
+        });
+    });
+</script>
+
+</body>
+</html>
